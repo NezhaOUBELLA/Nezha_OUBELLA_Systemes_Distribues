@@ -10,12 +10,16 @@
         <module name="TP-Keycloak" />
         <module name="customer-front-thymeleaf-app" />
         <module name="inventory-service" />
+        <module name="config-service" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-service" options="-parameters" />
       <module name="customer-front-thymeleaf-app" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="inventory-service" options="-parameters" />
     </option>
   </component>
